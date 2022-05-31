@@ -455,6 +455,7 @@ class Simulation(ABC):
                     if (
                         self.t >= self.t_max
                         or self.status == Simulation.STATUS_DONE
+                        or os.path.isfile("DONE")
                     ):
                         self.status = Simulation.STATUS_DONE
                     else:
