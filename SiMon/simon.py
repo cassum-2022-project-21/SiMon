@@ -10,7 +10,6 @@ import numpy as np
 
 import daemon 
 from daemon import pidfile
-from daemonize import Daemonize
 from SiMon import utilities
 from SiMon import config 
 from SiMon.simulation_container import SimulationContainer
