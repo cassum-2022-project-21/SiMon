@@ -4,3 +4,4 @@ DEFAULT_CONFIG = {
 }
 
 current_config = DEFAULT_CONFIG
+simon_dir = None

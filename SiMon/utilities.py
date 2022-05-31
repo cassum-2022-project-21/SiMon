@@ -34,7 +34,7 @@ Stall_time: 7200
 
 
 def get_simon_dir():
-    return os.path.dirname(os.path.abspath(__file__))
+    return config.simon_dir
 
 def progress_bar(val, val_max, val_min=0, prefix="", suffix="", bar_len=20):
     """

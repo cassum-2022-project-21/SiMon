@@ -37,8 +37,9 @@ class SiMon(object):
 
         # Only needed in interactive mode
         conf_path = os.path.join(cwd, config_file)
-        self.config = utilities.parse_config_file(os.path.join(cwd, config_file), section='SiMon')
+        self.config = utilities.parse_config_file(conf_path, section='SiMon')
         config.current_config = self.config
+        config.simon_dir = cwd
 
         if self.config is None:
             print(
